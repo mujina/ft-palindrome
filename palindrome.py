@@ -18,7 +18,7 @@ class ft_palindrome:
             raise TypeError("Argument cannot be blank")
 
         try:
-            i_am_int = isinstance(int(p), int)
+            isinstance(int(p), int)
         except ValueError:
             pass
         else:
