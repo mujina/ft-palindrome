@@ -15,7 +15,7 @@ def test_is_not_a_palindrome(palindrome):
     test_arg = 'abcd'
     assert palindrome.is_palindrome(test_arg) == "Not"
 
-def test_number_arg_raises_value_error(palindrome):
+def test_number_arg_raises_type_error(palindrome):
     with pytest.raises(TypeError):
         test_arg = 12321
         palindrome.is_palindrome(test_arg)

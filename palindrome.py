@@ -33,11 +33,7 @@ class ft_palindrome:
 
 if __name__ == "__main__":
   ft_palindrome = ft_palindrome()
-  arg = None
-  try:
-    arg = sys.argv[1]
-  except IndexError:
-    pass
+  arg = sys.argv[1]
   ans = ft_palindrome.is_palindrome(arg)
   print(ans)
 
