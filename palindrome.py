@@ -15,17 +15,11 @@ class ft_palindrome:
     def is_palindrome(self, p):
 
         if not p:
-            raise TypeError("Argument cannot be blank")
+            raise TypeError("Argument not defined")
 
-        try:
-            isinstance(int(p), int)
-        except ValueError:
-            pass
-        else:
-            raise TypeError("Argument cannot be an integer")
-
-        if not isinstance(p, str):
+        if isinstance(p, str) and not p.isalpha():
             raise TypeError("Argument must be a string.")
+
         if p == "".join(reversed(p)):
             return("Palindrome")
         else:
